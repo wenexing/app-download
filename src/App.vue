@@ -14,10 +14,23 @@ export default {
 </script>
 
 <style>
-body {
-  margin: 0;  
+  /*@import '/static/css/easydialog.min.css';*/
+  body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
 }
-
+h1, h2, h3, h4, h5, h6 {
+  color: #585f69;
+  margin-top: 5px;
+  text-shadow: none;
+  font-weight: 400;
+  font-family: NotoSansHans-Regular,AvenirNext-Regular,proxima-nova,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei","Open Sans","Helvetica Neue",Arial,sans-serif;
+}
+h2 {
+  font-size: 24px;
+  line-height: 33px;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

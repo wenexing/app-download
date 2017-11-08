@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img src="../assets/wex_logo.png">
+  
   </header>
 </template>
 
@@ -10,6 +10,11 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    install: function () {
+      // alert(1)
     }
   }
 }

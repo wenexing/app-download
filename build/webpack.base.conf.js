@@ -3,6 +3,7 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+var webpack = require('webpack')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -24,6 +25,8 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      'assets': path.resolve(__dirname, '../src/assets'), 
+      jquery: "jquery/src/jquery"
     }
   },
   module: {
@@ -70,7 +73,29 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.less$/,//https://github.com/webpack-contrib/less-loader
+        use: [{
+          loader: "style-loader" // creates style nodes from JS strings
+          }, {
+              loader: "css-loader" // translates CSS into CommonJS
+          }, {
+            loader: "less-loader", options: {
+              paths: [
+                  path.resolve(__dirname, "node_modules")
+              ]
+          }
+        }]
       }
     ]
-  }
+  },
+  // 增加一个plugins
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      "windows.jQuery": "jquery",
+      jQuery: "jquery"
+    })
+  ]
 }

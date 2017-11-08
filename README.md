@@ -28,3 +28,16 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+npm install jquery --save-dev
+npm install bootstrap --save-dev
+
+npm install vue-awesome --save-dev
+
+npm i font-awesome-webpack --save-dev
+
+npm i less --save-dev
+
+
+npm install --save-dev less-loader less
