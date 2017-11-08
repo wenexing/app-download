@@ -10,7 +10,6 @@ import router from './router'
 // import jQuery from 'jquery'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'font-awesome-webpack'
-// require("font-awesome-webpack");
 // [webpack如何全局引入jquery和插件?](https://www.zhihu.com/question/33448231)
 // window.jQuery = window.$ = require('jquery')
 // require('bootstrap/dist/js/bootstrap.min')
@@ -20,6 +19,8 @@ import 'bootstrap/dist/js/bootstrap.min'
 // https://github.com/Justineo/vue-awesome
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
+
+// require('font-awesome-webpack')
 
 // globally (in your main .js file)
 Vue.component('icon', Icon)

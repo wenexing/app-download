@@ -35,9 +35,11 @@ npm install bootstrap --save-dev
 
 npm install vue-awesome --save-dev
 
+[](https://www.npmjs.com/package/font-awesome-webpack)
+npm i font-awesome --save-dev
 npm i font-awesome-webpack --save-dev
-
+npm i font-awesome-webpack2 --save-dev
 npm i less --save-dev
 
-
 npm install --save-dev less-loader less
+

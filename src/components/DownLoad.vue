@@ -25,13 +25,13 @@
           <div id="showtext"><!--正在下载，请在浏览器中查看下载进度--></div>
           <div class="loading"></div>
           <a href="javascript:void(0);" @click="install_loading" id="down_load" class="btn-u btn-u-lg">
-            <i class="fa fa-android"><icon name="download"></icon></i>
+            <i class="fa fa-android"><!-- <icon name="download"></icon> --></i>
             点击安装</a>
         </div>
       </div>
 
       <div class="span12 gray-text" style="text-align:center;margin-bottom:10px;">
-        <span class=""><i aria-hidden="true" class="fa fa-android" style="font-size:16px;"><icon name="android"></icon></i> 适用于Android设备</span>
+        <span class=""><i aria-hidden="true" class="fa fa-android" style="font-size:16px;"><!-- <icon name="android"></icon> --></i> 适用于Android设备</span>
       </div>
 
     </div>
