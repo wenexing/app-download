@@ -48,11 +48,11 @@ export default {
     }
   },
   created: function () {
-    console.log('555')
+    console.log('222')
   },
   mounted () {
     var vm = this
-    console.log('444')
+    console.log('111')
     setTimeout(function () {
       if (vm.isWechatRequest()) {
         // vm.isWechat = true
