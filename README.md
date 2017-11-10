@@ -30,16 +30,39 @@ npm test
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
+
+
+https://www.pgyer.com/wenexing-android
+
 npm install jquery --save-dev
 npm install bootstrap --save-dev
 
 npm install vue-awesome --save-dev
 
-[](https://www.npmjs.com/package/font-awesome-webpack)
+[font-awesome-webpack](https://www.npmjs.com/package/font-awesome-webpack)
 npm i font-awesome --save-dev
 npm i font-awesome-webpack --save-dev
 npm i font-awesome-webpack2 --save-dev
 npm i less --save-dev
 
 npm install --save-dev less-loader less
+npm install --save vue-animate
 
+Todo:
+- 提示浏览器打开的过渡动画[jquery slideDown]√
+- 链接二维码制作http://app.wenexing.com/android
+- 判断是否微信 √
+- 判断还是ios android √
+- 部署 
+
+```
+if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+    //alert(navigator.userAgent);  
+    window.location.href ="iPhone.html";
+} else if (/(Android)/i.test(navigator.userAgent)) {
+    //alert(navigator.userAgent); 
+    window.location.href ="Android.html";
+} else {
+    window.location.href ="pc.html";
+};
+```

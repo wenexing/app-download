@@ -3,11 +3,6 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-// import $ from 'jquery'
-// import jquery from 'jquery'
-// import 'jquery/dist/jquery.min'
-// global.jQuery = require('jquery')
-// import jQuery from 'jquery'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'font-awesome-webpack'
 // [webpack如何全局引入jquery和插件?](https://www.zhihu.com/question/33448231)
@@ -19,7 +14,7 @@ import 'bootstrap/dist/js/bootstrap.min'
 // https://github.com/Justineo/vue-awesome
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
-
+// import 'vue-animate/dist/vue-animate.min.css'
 // require('font-awesome-webpack')
 
 // globally (in your main .js file)
